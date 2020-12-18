@@ -77,7 +77,6 @@ const boxplot = function (id){
         .append("path")
         .attr("fill", (d,i)=>d3.schemeTableau10[i])//"PaleTurquoise")
         .attr("d", d => {
-            console.log()
             return `M${x(d.key) - 20},${y(d.value.quartiles[2])}
                     H${x(d.key) + 20}
                     V${y(d.value.quartiles[0])}
@@ -91,7 +90,6 @@ const boxplot = function (id){
         .attr("stroke", "black")
         .attr("stroke-width", 2)
         .attr("d", d => {
-            console.log()
             return `M${x(d.key) - 20},${y(d.value.quartiles[1])}
                     H${x(d.key) + 20}
                     `
@@ -105,7 +103,6 @@ const boxplot = function (id){
         .attr("transform", d => `translate(${x(d.key)},0)`)
         .selectAll("circle")
         .data(d =>{ 
-            // console.log(d.value.outliers)    
             return d.value.outliers
         })
         .join("circle")
