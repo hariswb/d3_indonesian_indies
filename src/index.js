@@ -5,8 +5,6 @@ import heatmap from "./common/charts/heatmap";
 import pairplot from "./common/charts/pairplot";
 import {bulk} from "./common/data"
 
-console.log()
-console.log(bulk[0])
 bar_chart("chartOne")
 box_plot("chartTwo")
 heatmap("chartThree")

@@ -2,7 +2,6 @@ import * as d3 from "d3"
 import {two_features} from "../data"
 const data = two_features 
 function Pairplot(id){
-    console.log(data)
     const width = 500
     const height = 500
     const margin = {top: 100, right: 20, bottom: 40, left: 50}
